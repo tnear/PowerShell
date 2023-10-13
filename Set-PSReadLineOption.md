@@ -1,6 +1,6 @@
 # Set-PSReadLineOption
 
-Customizes the behavior of command line editing in PSReadLine. 
+Customizes the behavior of command line editing in PSReadLine.
 
 ### Change color of InlinePrediction
 
