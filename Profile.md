@@ -11,5 +11,12 @@ if (!(Test-Path -Path $PROFILE)) {
 
 ### Open profile
 ```PowerShell
-code $PROFILE
+> code $PROFILE
+```
+
+### Reload profile
+Similar to `source` on Linux. Reloads profile without needing to restart the terminal.
+
+```powershell
+> . $PROFILE
 ```

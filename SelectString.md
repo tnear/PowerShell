@@ -6,7 +6,7 @@ https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility
 
 ### Basic text search
 ```powershell
-> 'hello world' | Select-String -Pattern 'world'
+> 'hello world' | Select-String world
 
 hello world
 ```
@@ -15,7 +15,7 @@ hello world
 
 ### Find 'Win' in PSVersionTable.md
 ```powershell
-> Select-String -Path PSVersionTable.md -Pattern "Win"
+> Select-String -Path PSVersionTable.md 'Win'
 
 PSVersionTable.md:15:OS            Microsoft Windows 10.0.19045
 PSVersionTable.md:16:Platform      Win32NT
@@ -23,7 +23,7 @@ PSVersionTable.md:16:Platform      Win32NT
 
 ### Search all .md files using wildcard (*)
 ```powershell
-> Select-String -Path *.md -Pattern "string"
+> Select-String -Path *.md 'string'
 
 Get-PSReadLineOption.md:11:AddToHistoryHandler : System.Func[System.String]
 Get-PSReadLineOption.md:50:StringColor         : "`e[36m"
@@ -47,7 +47,7 @@ PSVersionTable.md:15:OS       Microsoft Windows 10.0.19045
 By default, `Select-String` is case insensitive. Use `-CaseSensitive` to enable.
 
 ```powershell
-> 'hello world' | Select-String -Pattern 'World' -CaseSensitive
+> 'hello world' | Select-String 'World' -CaseSensitive
 
 <no output>
 ```
