@@ -14,7 +14,7 @@ Set-PSReadLineOption -Colors @{ Parameter = "`e[93m" }
 
 ### Aliases
 Set-Alias -Name grep -Value Select-String
-#Set-Alias -Name less -Value more
+Set-Alias -Name 'less' -Value "${env:ProgramFiles}/Git/usr/bin/less.exe"
 
 ### Functions
 # gs for 'git status'.

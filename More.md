@@ -1,5 +1,7 @@
 # More
 
+`more` is a basic pager built-in to PowerShell.
+
 ### Commands
 | Command  | Description                           |
 |----------|---------------------------------------|
@@ -10,4 +12,8 @@
 ### Example
 ```powershell
 > ps | more
+```
+
+```powershell
+> more <file>
 ```
