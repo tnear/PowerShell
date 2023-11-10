@@ -23,7 +23,7 @@ This tool should be installed along with Git for Windows. This line sets an alia
 | `N`                | Previous match during search|
 
 ### Commands
-Press `-` to enter command mode
+Press `-` to enter command mode.
 
 | Command | Description                      |
 |---------|----------------------------------|
