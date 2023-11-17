@@ -1,5 +1,7 @@
 # PowerShell 7 Profile
 
+# To edit: > code $PROFILE
+
 ### Colors
 # get colors with: Get-PSReadLineOption
 # change autocomplete color (this lightens it)
@@ -12,9 +14,14 @@ Set-PSReadLineOption -Colors @{ Operator = "`e[37m" }
 # ex: cl.exe -flag
 Set-PSReadLineOption -Colors @{ Parameter = "`e[93m" }
 
+# use lighter shade of blue for strings
+Set-PSReadLineOption -Colors @{ String = "`e[96m" }
+
 ### Aliases
 Set-Alias -Name grep -Value Select-String
 Set-Alias -Name 'less' -Value "${env:ProgramFiles}/Git/usr/bin/less.exe"
+# Use 'batcat in addition to 'cat' to view files
+Set-Alias -Name batcat -Value bat
 
 ### Functions
 # gs for 'git status'.
